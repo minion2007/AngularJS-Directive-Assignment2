@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<title>Directive Ng-Click</title>
+</head>
+<body>
+	<div ng-app="myApp" ng-controller="myController">
+		<button Ng-Click="changeName()">{{message}}</button>
+	</div>
+	
+<script>
+	var app=angular.module("myApp",[]);
+	app.controller('myController', function($scope){
+	$scope.message="click ";
+	$scope.changeName=function(){
+	alert("Beautiful World");
+}
+});
+</script>
+</body>
+</html>
